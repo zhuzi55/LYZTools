@@ -7,6 +7,8 @@
 //
 
 #import "LYViewController.h"
+#import "UIAlertController+LYCommon.h"
+
 
 @interface LYViewController ()
 
@@ -17,13 +19,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    self.view.backgroundColor = [UIColor yellowColor];
+    
+    
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    NSLog(@"touchesBegan");
+    
+    [UIAlertController alertWithTitle:@"测试标题" Message:@"测试内容" FromVC:self];
+    
 }
 
 @end
