@@ -7,71 +7,95 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F3758411295A6777C4BEF2EF2333834 /* UIAlertController+LYCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C54CD5F80B7A4B49D1814312414628C /* UIAlertController+LYCommon.m */; };
+		2E50DBCEC2C1D6E5F12B4DDCF28A6FB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		40B83365AD8CE65F0EC33E053D64D01F /* UIAlertController+LYCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = D20DF595340BD430CCEF45A9BE8A231B /* UIAlertController+LYCommon.m */; };
+		496A12742C0E186F9F5B162BBB6CA19F /* UIFont+LYCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 508BD47D2C5576E1D45AB3FB0918F021 /* UIFont+LYCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		573DA71889C6333138E882A524B7289F /* Pods-LYTools_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BCBFFD07D11DB470BCFD59FC736CC4 /* Pods-LYTools_Tests-dummy.m */; };
-		78C9323E326F53C3362C9B88102DA162 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		A8A1EB23CD2D6DFCE8CE474C6A8373FE /* LYTools-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15A66B2B826980C64BDCBC25FDE25AD3 /* LYTools-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		651BF402C4A7122188955290E22B750D /* UIView+LYCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4EDF1B0D2263A8A98170DDD8DFDED9 /* UIView+LYCommon.m */; };
+		816FF0658330840509202F8332A3ACE4 /* UIImage+LYCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA0D9EEA11CDBDDA1C19A2F6B7A2B1C /* UIImage+LYCommon.m */; };
+		8393F5E2371EE0953B8FCBF1C26ABEAF /* UIView+LYCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A926A19FD59ADCB66C8D866CEC10428 /* UIView+LYCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E914EEA0F7819348DC36E244CD017FF /* UIColor+LYCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 168E06F6CE592A96E531A08C07762E04 /* UIColor+LYCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		902C10991777A612087AC8E03BAD0E2D /* UIImage+LYCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 017C8CE4F2B98CB9561B4D259B64D0B3 /* UIImage+LYCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99C870C08E0CD368BC994F3F45662BF4 /* UIFont+LYCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C594FC59F612BABB4CCBA9A9F200C8B4 /* UIFont+LYCommon.m */; };
+		A22A6259E538E62AA9277CE4EDC66F9A /* LYTools-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1CB2550DCFCBD3D10286ACD54EEC0BA /* LYTools-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A433F054949B310431CEBC8F1CD25B2E /* LYTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BB4292422C3D90E201C878DFC47062 /* LYTools-dummy.m */; };
 		AABB75E9F3DA4C4C7114D88C1FD76993 /* Pods-LYTools_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 354156291BBB6CBD2A8A4788F93131EE /* Pods-LYTools_Example-dummy.m */; };
-		BA76A8951072C66D3A6FC897CD9C7DB8 /* UIAlertController+LYCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = C04615C10C25A9B13CF171EFB479B86F /* UIAlertController+LYCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CDE7D914B9C9DCB6A981B0939A2F43B7 /* LYTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5229F17D950DEAA2152D8007C7F7DA4 /* LYTools-dummy.m */; };
+		ACC99E0CF605B3A877AE9B44C3AD8447 /* NSString+LYCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = CC309E148FFF1684D0E3DDEFCA1D9BC6 /* NSString+LYCommon.m */; };
+		AE1863903236EC004C1002C5E9B54D8C /* NSString+LYCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C9DD9C2C96206530AE2E660B80BE05D /* NSString+LYCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5D1AD2846A331A4CFDE441AC67BAACC /* UIAlertController+LYCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = D17CC72C76AA5A54752B699BEDE4F1FB /* UIAlertController+LYCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D1D8A788A9FC5160D3E508E1DED66727 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		DAD41E0932B5F0A5390D0CA47D77E46F /* Pods-LYTools_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 23DAC9DA8FAAFB3F1AEEF441061400CC /* Pods-LYTools_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E520CDF062AE54EFE1D905128EBFFFB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E66B20232969BDEB00E15788 /* NSData+LYCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = E66B20212969BDEB00E15788 /* NSData+LYCommon.h */; };
+		E66B20242969BDEB00E15788 /* NSData+LYCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = E66B20222969BDEB00E15788 /* NSData+LYCommon.m */; };
 		E92EFE98F0D07EC0CCE819B73FD36101 /* Pods-LYTools_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 818440B8DEB964B732893A5264A932A4 /* Pods-LYTools_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDC538C07A88E7D7937057F6A528D54 /* UIColor+LYCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBF33E1101442120A753B2CDFED0F5C /* UIColor+LYCommon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		53102073F31724B188ADC76DE8507757 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9D68460B27FE8FE1FE22D8DF7EBFED8F;
-			remoteInfo = "Pods-LYTools_Example";
-		};
-		A8A710738F80E942C0F318CA78129705 /* PBXContainerItemProxy */ = {
+		C5A06634979C39C5179ACB0BF150EEBC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BAD26707FEFE725309EE49BCC7DA66B3;
 			remoteInfo = LYTools;
 		};
+		E673AA2BD951EA52C7547A452990117D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D68460B27FE8FE1FE22D8DF7EBFED8F;
+			remoteInfo = "Pods-LYTools_Example";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		017C8CE4F2B98CB9561B4D259B64D0B3 /* UIImage+LYCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+LYCommon.h"; path = "LYTools/Classes/UIImage+LYCommon.h"; sourceTree = "<group>"; };
+		01BB4292422C3D90E201C878DFC47062 /* LYTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LYTools-dummy.m"; sourceTree = "<group>"; };
+		0A926A19FD59ADCB66C8D866CEC10428 /* UIView+LYCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+LYCommon.h"; path = "LYTools/Classes/UIView+LYCommon.h"; sourceTree = "<group>"; };
+		0B9576C622D525E1154291408567E843 /* LYTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LYTools.debug.xcconfig; sourceTree = "<group>"; };
 		0F11DD9F797C51BEE143E16226BEC09A /* Pods-LYTools_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LYTools_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		15A66B2B826980C64BDCBC25FDE25AD3 /* LYTools-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LYTools-umbrella.h"; sourceTree = "<group>"; };
+		167C368E1F0F904368FC1B00D1ACACD4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		167F3381D1134E066A59B1B89B452197 /* Pods-LYTools_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LYTools_Tests-Info.plist"; sourceTree = "<group>"; };
+		168E06F6CE592A96E531A08C07762E04 /* UIColor+LYCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+LYCommon.h"; path = "LYTools/Classes/UIColor+LYCommon.h"; sourceTree = "<group>"; };
+		1EBF33E1101442120A753B2CDFED0F5C /* UIColor+LYCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+LYCommon.m"; path = "LYTools/Classes/UIColor+LYCommon.m"; sourceTree = "<group>"; };
 		23DAC9DA8FAAFB3F1AEEF441061400CC /* Pods-LYTools_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LYTools_Example-umbrella.h"; sourceTree = "<group>"; };
 		2E8AE1D16501746AEDE7C6826F9C7324 /* LYTools */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LYTools; path = LYTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		354156291BBB6CBD2A8A4788F93131EE /* Pods-LYTools_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LYTools_Example-dummy.m"; sourceTree = "<group>"; };
-		36EBECB94136E08535F6EB15895EAE18 /* LYTools.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LYTools.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3C9DD9C2C96206530AE2E660B80BE05D /* NSString+LYCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+LYCommon.h"; path = "LYTools/Classes/NSString+LYCommon.h"; sourceTree = "<group>"; };
+		508BD47D2C5576E1D45AB3FB0918F021 /* UIFont+LYCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+LYCommon.h"; path = "LYTools/Classes/UIFont+LYCommon.h"; sourceTree = "<group>"; };
 		5104ABE6C9A28098CAAAB195C557DCAA /* Pods-LYTools_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LYTools_Tests.modulemap"; sourceTree = "<group>"; };
 		533E9832BD34A130AEA36085E44D192B /* Pods-LYTools_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LYTools_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5E23C9A6F847471E39C6B186D784AC5A /* Pods-LYTools_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LYTools_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		6C54CD5F80B7A4B49D1814312414628C /* UIAlertController+LYCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertController+LYCommon.m"; path = "LYTools/Classes/UIAlertController+LYCommon.m"; sourceTree = "<group>"; };
-		6EC783C09277F5C0292902F5DE0EC57B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		6F6B71EBFDA3FF9727C22B4233B7E7BC /* LYTools-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LYTools-Info.plist"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		741C2B78522F66270A22DB6C294714F9 /* Pods-LYTools_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LYTools_Tests"; path = Pods_LYTools_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7461C04D664724F687A59380CEB9FC22 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7E4EDF1B0D2263A8A98170DDD8DFDED9 /* UIView+LYCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+LYCommon.m"; path = "LYTools/Classes/UIView+LYCommon.m"; sourceTree = "<group>"; };
 		818440B8DEB964B732893A5264A932A4 /* Pods-LYTools_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LYTools_Tests-umbrella.h"; sourceTree = "<group>"; };
 		895741F2C02334C0527069A9E2AA3D8B /* Pods-LYTools_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LYTools_Example.modulemap"; sourceTree = "<group>"; };
 		8B40619F4A09E0D55ED575936E35159B /* Pods-LYTools_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LYTools_Example-Info.plist"; sourceTree = "<group>"; };
 		8CE910B39E5DF26D2CDEAC17AB9624A7 /* Pods-LYTools_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LYTools_Example-frameworks.sh"; sourceTree = "<group>"; };
 		8DBBFDDC77B5229C3A700AC686AE93AF /* Pods-LYTools_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LYTools_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9FF1F12A0F5501F059A5C6F00F9E65F7 /* Pods-LYTools_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LYTools_Example"; path = Pods_LYTools_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA10588E61CA6E3083D166644A600E0A /* Pods-LYTools_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LYTools_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AE802CEDC638D8A2A81264DFF04B5C8D /* LYTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LYTools.release.xcconfig; sourceTree = "<group>"; };
 		AEB7C26B3272DB9E2B325440241E66CA /* Pods-LYTools_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LYTools_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B5229F17D950DEAA2152D8007C7F7DA4 /* LYTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LYTools-dummy.m"; sourceTree = "<group>"; };
-		C04615C10C25A9B13CF171EFB479B86F /* UIAlertController+LYCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertController+LYCommon.h"; path = "LYTools/Classes/UIAlertController+LYCommon.h"; sourceTree = "<group>"; };
-		C276D15087D2A840FB8590AE3E6A8091 /* LYTools-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LYTools-Info.plist"; sourceTree = "<group>"; };
-		C498E3E654A0EE5DCF854A49C758DC09 /* LYTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LYTools.release.xcconfig; sourceTree = "<group>"; };
-		C78F215F1B25BB86B2339294322DC7D7 /* LYTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LYTools.debug.xcconfig; sourceTree = "<group>"; };
+		C594FC59F612BABB4CCBA9A9F200C8B4 /* UIFont+LYCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+LYCommon.m"; path = "LYTools/Classes/UIFont+LYCommon.m"; sourceTree = "<group>"; };
+		C596B4DBB19523A2D34971040B5AB986 /* LYTools.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LYTools.modulemap; sourceTree = "<group>"; };
+		CC309E148FFF1684D0E3DDEFCA1D9BC6 /* NSString+LYCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+LYCommon.m"; path = "LYTools/Classes/NSString+LYCommon.m"; sourceTree = "<group>"; };
+		D17CC72C76AA5A54752B699BEDE4F1FB /* UIAlertController+LYCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertController+LYCommon.h"; path = "LYTools/Classes/UIAlertController+LYCommon.h"; sourceTree = "<group>"; };
+		D20DF595340BD430CCEF45A9BE8A231B /* UIAlertController+LYCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertController+LYCommon.m"; path = "LYTools/Classes/UIAlertController+LYCommon.m"; sourceTree = "<group>"; };
+		D3509F09EFAF795D15AF8E1EED49B518 /* LYTools.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LYTools.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D3BCBFFD07D11DB470BCFD59FC736CC4 /* Pods-LYTools_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LYTools_Tests-dummy.m"; sourceTree = "<group>"; };
 		D9B0FC271AE71DD554B732EB92111545 /* Pods-LYTools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LYTools_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		DCE5E5E5B750229602E38CC28C3D20D2 /* LYTools.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LYTools.modulemap; sourceTree = "<group>"; };
 		E145C80C89C2D5558F27219C3FA2476B /* Pods-LYTools_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LYTools_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E5037C592D95D08C287508EA4912119F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		F972BC1B996EA7224C15E03D36204B46 /* LYTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LYTools-prefix.pch"; sourceTree = "<group>"; };
+		E14AFF9B8A239EA02CAC059A03C7DE2A /* LYTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LYTools-prefix.pch"; sourceTree = "<group>"; };
+		E66B20212969BDEB00E15788 /* NSData+LYCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSData+LYCommon.h"; path = "LYTools/Classes/NSData+LYCommon.h"; sourceTree = "<group>"; };
+		E66B20222969BDEB00E15788 /* NSData+LYCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSData+LYCommon.m"; path = "LYTools/Classes/NSData+LYCommon.m"; sourceTree = "<group>"; };
+		F1CB2550DCFCBD3D10286ACD54EEC0BA /* LYTools-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LYTools-umbrella.h"; sourceTree = "<group>"; };
+		FEA0D9EEA11CDBDDA1C19A2F6B7A2B1C /* UIImage+LYCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+LYCommon.m"; path = "LYTools/Classes/UIImage+LYCommon.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,25 +115,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A7AAF8A08B17A60A7EAF325C8BB4AD9D /* Frameworks */ = {
+		2CB19C2BC82B9C8874A17F80EC2A89D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78C9323E326F53C3362C9B88102DA162 /* Foundation.framework in Frameworks */,
+				2E50DBCEC2C1D6E5F12B4DDCF28A6FB8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		32AB065BEE79A17E1A3DA3F5FE68D266 /* Pod */ = {
+		2DABE6EBA49661B9029B587F749BACF5 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				6EC783C09277F5C0292902F5DE0EC57B /* LICENSE */,
-				36EBECB94136E08535F6EB15895EAE18 /* LYTools.podspec */,
-				E5037C592D95D08C287508EA4912119F /* README.md */,
+				167C368E1F0F904368FC1B00D1ACACD4 /* LICENSE */,
+				D3509F09EFAF795D15AF8E1EED49B518 /* LYTools.podspec */,
+				7461C04D664724F687A59380CEB9FC22 /* README.md */,
 			);
 			name = Pod;
+			sourceTree = "<group>";
+		};
+		492335D5561417B58DCB110AA5D86F6D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C596B4DBB19523A2D34971040B5AB986 /* LYTools.modulemap */,
+				01BB4292422C3D90E201C878DFC47062 /* LYTools-dummy.m */,
+				6F6B71EBFDA3FF9727C22B4233B7E7BC /* LYTools-Info.plist */,
+				E14AFF9B8A239EA02CAC059A03C7DE2A /* LYTools-prefix.pch */,
+				F1CB2550DCFCBD3D10286ACD54EEC0BA /* LYTools-umbrella.h */,
+				0B9576C622D525E1154291408567E843 /* LYTools.debug.xcconfig */,
+				AE802CEDC638D8A2A81264DFF04B5C8D /* LYTools.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LYTools";
 			sourceTree = "<group>";
 		};
 		4FB4EEA7C10BB64B3A6428950D3D9E1D /* Products */ = {
@@ -146,6 +185,14 @@
 			path = "Target Support Files/Pods-LYTools_Tests";
 			sourceTree = "<group>";
 		};
+		8B190388740388B39DBCC365E2532036 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4B9DFE5631585E5348AF72B2F37834F /* LYTools */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		91B6F69E26B0B19AE806D558DF694FFD /* Pods-LYTools_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,11 +219,35 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		C4B9DFE5631585E5348AF72B2F37834F /* LYTools */ = {
+			isa = PBXGroup;
+			children = (
+				3C9DD9C2C96206530AE2E660B80BE05D /* NSString+LYCommon.h */,
+				CC309E148FFF1684D0E3DDEFCA1D9BC6 /* NSString+LYCommon.m */,
+				D17CC72C76AA5A54752B699BEDE4F1FB /* UIAlertController+LYCommon.h */,
+				D20DF595340BD430CCEF45A9BE8A231B /* UIAlertController+LYCommon.m */,
+				168E06F6CE592A96E531A08C07762E04 /* UIColor+LYCommon.h */,
+				1EBF33E1101442120A753B2CDFED0F5C /* UIColor+LYCommon.m */,
+				508BD47D2C5576E1D45AB3FB0918F021 /* UIFont+LYCommon.h */,
+				C594FC59F612BABB4CCBA9A9F200C8B4 /* UIFont+LYCommon.m */,
+				017C8CE4F2B98CB9561B4D259B64D0B3 /* UIImage+LYCommon.h */,
+				FEA0D9EEA11CDBDDA1C19A2F6B7A2B1C /* UIImage+LYCommon.m */,
+				0A926A19FD59ADCB66C8D866CEC10428 /* UIView+LYCommon.h */,
+				7E4EDF1B0D2263A8A98170DDD8DFDED9 /* UIView+LYCommon.m */,
+				E66B20212969BDEB00E15788 /* NSData+LYCommon.h */,
+				E66B20222969BDEB00E15788 /* NSData+LYCommon.m */,
+				2DABE6EBA49661B9029B587F749BACF5 /* Pod */,
+				492335D5561417B58DCB110AA5D86F6D /* Support Files */,
+			);
+			name = LYTools;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				E57D91426F4C1495BD0615D3CFE7D919 /* Development Pods */,
+				8B190388740388B39DBCC365E2532036 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				4FB4EEA7C10BB64B3A6428950D3D9E1D /* Products */,
 				AFB582FEB95014C6F0ADFC4D773C86B0 /* Targets Support Files */,
@@ -191,53 +262,9 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D505E763B94F09521EF7A4A8404C6B7A /* LYTools */ = {
-			isa = PBXGroup;
-			children = (
-				C04615C10C25A9B13CF171EFB479B86F /* UIAlertController+LYCommon.h */,
-				6C54CD5F80B7A4B49D1814312414628C /* UIAlertController+LYCommon.m */,
-				32AB065BEE79A17E1A3DA3F5FE68D266 /* Pod */,
-				E5E389DDE9D9289BAF7928991E715273 /* Support Files */,
-			);
-			name = LYTools;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		E57D91426F4C1495BD0615D3CFE7D919 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D505E763B94F09521EF7A4A8404C6B7A /* LYTools */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		E5E389DDE9D9289BAF7928991E715273 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DCE5E5E5B750229602E38CC28C3D20D2 /* LYTools.modulemap */,
-				B5229F17D950DEAA2152D8007C7F7DA4 /* LYTools-dummy.m */,
-				C276D15087D2A840FB8590AE3E6A8091 /* LYTools-Info.plist */,
-				F972BC1B996EA7224C15E03D36204B46 /* LYTools-prefix.pch */,
-				15A66B2B826980C64BDCBC25FDE25AD3 /* LYTools-umbrella.h */,
-				C78F215F1B25BB86B2339294322DC7D7 /* LYTools.debug.xcconfig */,
-				C498E3E654A0EE5DCF854A49C758DC09 /* LYTools.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/LYTools";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		42461C8A16B05E461FEE215488660B55 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A8A1EB23CD2D6DFCE8CE474C6A8373FE /* LYTools-umbrella.h in Headers */,
-				BA76A8951072C66D3A6FC897CD9C7DB8 /* UIAlertController+LYCommon.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4601CF381BB6924DC2612F647CEA7514 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -251,6 +278,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAD41E0932B5F0A5390D0CA47D77E46F /* Pods-LYTools_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9841A527F73FBBFDAF7FCC1A2957BA3E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A22A6259E538E62AA9277CE4EDC66F9A /* LYTools-umbrella.h in Headers */,
+				AE1863903236EC004C1002C5E9B54D8C /* NSString+LYCommon.h in Headers */,
+				C5D1AD2846A331A4CFDE441AC67BAACC /* UIAlertController+LYCommon.h in Headers */,
+				E66B20232969BDEB00E15788 /* NSData+LYCommon.h in Headers */,
+				8E914EEA0F7819348DC36E244CD017FF /* UIColor+LYCommon.h in Headers */,
+				496A12742C0E186F9F5B162BBB6CA19F /* UIFont+LYCommon.h in Headers */,
+				902C10991777A612087AC8E03BAD0E2D /* UIImage+LYCommon.h in Headers */,
+				8393F5E2371EE0953B8FCBF1C26ABEAF /* UIView+LYCommon.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +311,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				E3DB3A6D491C46FCC782B7C058E618BD /* PBXTargetDependency */,
+				6C78B2AB435C8C8BB282302438DFD029 /* PBXTargetDependency */,
 			);
 			name = "Pods-LYTools_Example";
 			productName = Pods_LYTools_Example;
@@ -288,7 +330,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				39418F2F8198444B00D974A4713B44ED /* PBXTargetDependency */,
+				68474FCA4E7CDC6245EBBB8B6D00FBA5 /* PBXTargetDependency */,
 			);
 			name = "Pods-LYTools_Tests";
 			productName = Pods_LYTools_Tests;
@@ -297,12 +339,12 @@
 		};
 		BAD26707FEFE725309EE49BCC7DA66B3 /* LYTools */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C0316531E763E3BE2B95794F67D72668 /* Build configuration list for PBXNativeTarget "LYTools" */;
+			buildConfigurationList = CA15FA89A3B1D454049ACE9525B1548B /* Build configuration list for PBXNativeTarget "LYTools" */;
 			buildPhases = (
-				42461C8A16B05E461FEE215488660B55 /* Headers */,
-				A4D964C4B5FB8AAF2B003AE082B68E17 /* Sources */,
-				A7AAF8A08B17A60A7EAF325C8BB4AD9D /* Frameworks */,
-				A14AD9D2EC3E4744A5D0B7E60DF8CD07 /* Resources */,
+				9841A527F73FBBFDAF7FCC1A2957BA3E /* Headers */,
+				33E83E20A7F3C199993182AD33B49EC9 /* Sources */,
+				2CB19C2BC82B9C8874A17F80EC2A89D0 /* Frameworks */,
+				371E8938439391A4912236C3684CF864 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -343,14 +385,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		802FEA03FE5CCBCCF23D74BDC2A08770 /* Resources */ = {
+		371E8938439391A4912236C3684CF864 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A14AD9D2EC3E4744A5D0B7E60DF8CD07 /* Resources */ = {
+		802FEA03FE5CCBCCF23D74BDC2A08770 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -367,12 +409,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A4D964C4B5FB8AAF2B003AE082B68E17 /* Sources */ = {
+		33E83E20A7F3C199993182AD33B49EC9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDE7D914B9C9DCB6A981B0939A2F43B7 /* LYTools-dummy.m in Sources */,
-				1F3758411295A6777C4BEF2EF2333834 /* UIAlertController+LYCommon.m in Sources */,
+				E66B20242969BDEB00E15788 /* NSData+LYCommon.m in Sources */,
+				A433F054949B310431CEBC8F1CD25B2E /* LYTools-dummy.m in Sources */,
+				ACC99E0CF605B3A877AE9B44C3AD8447 /* NSString+LYCommon.m in Sources */,
+				40B83365AD8CE65F0EC33E053D64D01F /* UIAlertController+LYCommon.m in Sources */,
+				FFDC538C07A88E7D7937057F6A528D54 /* UIColor+LYCommon.m in Sources */,
+				99C870C08E0CD368BC994F3F45662BF4 /* UIFont+LYCommon.m in Sources */,
+				816FF0658330840509202F8332A3ACE4 /* UIImage+LYCommon.m in Sources */,
+				651BF402C4A7122188955290E22B750D /* UIView+LYCommon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,17 +443,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		39418F2F8198444B00D974A4713B44ED /* PBXTargetDependency */ = {
+		68474FCA4E7CDC6245EBBB8B6D00FBA5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-LYTools_Example";
 			target = 9D68460B27FE8FE1FE22D8DF7EBFED8F /* Pods-LYTools_Example */;
-			targetProxy = 53102073F31724B188ADC76DE8507757 /* PBXContainerItemProxy */;
+			targetProxy = E673AA2BD951EA52C7547A452990117D /* PBXContainerItemProxy */;
 		};
-		E3DB3A6D491C46FCC782B7C058E618BD /* PBXTargetDependency */ = {
+		6C78B2AB435C8C8BB282302438DFD029 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LYTools;
 			target = BAD26707FEFE725309EE49BCC7DA66B3 /* LYTools */;
-			targetProxy = A8A710738F80E942C0F318CA78129705 /* PBXContainerItemProxy */;
+			targetProxy = C5A06634979C39C5179ACB0BF150EEBC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -443,9 +491,9 @@
 			};
 			name = Debug;
 		};
-		2EC52BCAE89EC3B98205ADFFC0AD6BFE /* Debug */ = {
+		76EE1EA5C755795FECA419D0E383D9EE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C78F215F1B25BB86B2339294322DC7D7 /* LYTools.debug.xcconfig */;
+			baseConfigurationReference = 0B9576C622D525E1154291408567E843 /* LYTools.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -528,10 +576,40 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		910CF3B0ECF2D54642A9429D4C536D8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE802CEDC638D8A2A81264DFF04B5C8D /* LYTools.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LYTools/LYTools-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LYTools/LYTools-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LYTools/LYTools.modulemap";
+				PRODUCT_MODULE_NAME = LYTools;
+				PRODUCT_NAME = LYTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -567,37 +645,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		C19BE691CDAD688E107DF041B95AEFFC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C498E3E654A0EE5DCF854A49C758DC09 /* LYTools.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LYTools/LYTools-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LYTools/LYTools-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LYTools/LYTools.modulemap";
-				PRODUCT_MODULE_NAME = LYTools;
-				PRODUCT_NAME = LYTools;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -763,11 +810,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C0316531E763E3BE2B95794F67D72668 /* Build configuration list for PBXNativeTarget "LYTools" */ = {
+		CA15FA89A3B1D454049ACE9525B1548B /* Build configuration list for PBXNativeTarget "LYTools" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2EC52BCAE89EC3B98205ADFFC0AD6BFE /* Debug */,
-				C19BE691CDAD688E107DF041B95AEFFC /* Release */,
+				76EE1EA5C755795FECA419D0E383D9EE /* Debug */,
+				910CF3B0ECF2D54642A9429D4C536D8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
