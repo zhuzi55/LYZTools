@@ -74,8 +74,17 @@ NS_ASSUME_NONNULL_BEGIN
 -(NSString *)ly_homeAddressDesensitization;
 
 #pragma mark - 加解密 MD5 AES RSA
-/// md5加密
+/// md5加密 32位
 -(NSString *)ly_md5String;
+
+/// sha1加密 40位
+-(NSString *)ly_sha1String;
+
+/// sha256加密 64位
+-(NSString *)ly_sha256String;
+
+/// sha512加密 128位
+-(NSString *)ly_sha512String;
 
 /// AES加密
 /// @param key 长度一般为16（AES算法所能支持的密钥长度可以为128,192,256位（也即16，24，32个字节））

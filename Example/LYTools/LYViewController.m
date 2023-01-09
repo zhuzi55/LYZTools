@@ -7,12 +7,11 @@
 //
 
 #import "LYViewController.h"
-#import "NSString+LYCommon.h"
+//#import "UIView+LYCommon.h"
 
 
 @interface LYViewController ()
 
-@property (nonatomic, strong) UIImageView *v;
 
 @end
 
@@ -24,14 +23,13 @@
 	
     self.view.backgroundColor = [UIColor yellowColor];
         
-    
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    NSLog(@"touchesBegan");
         
-//    NSString *str = [@"test" ly_utf8String];
-//    NSLog(@"字符串 == %@", str);
+        
 }
+
+
 
 @end

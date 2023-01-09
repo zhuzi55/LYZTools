@@ -21,6 +21,9 @@
 
 /// 加载十六进制颜色 -  三种形式都支持 0xFFFFFF #FFFFFF FFFFFF
 + (UIColor *)ly_colorWithHexString:(NSString *)hexStr{
+    return [self ly_colorWithHexString:hexStr Alpha:1.0];
+}
++(UIColor *)ly_colorWithHexString:(NSString *)hexStr Alpha:(CGFloat)alpha{
     
     NSString *cString = [[hexStr stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
     // String should be 6 or 8 characters
@@ -51,8 +54,8 @@
     [[NSScanner scannerWithString:rString] scanHexInt:&r];
     [[NSScanner scannerWithString:gString] scanHexInt:&g];
     [[NSScanner scannerWithString:bString] scanHexInt:&b];
-    return [UIColor colorWithRed:((float) r / 255.0f) green:((float) g / 255.0f) blue:((float) b / 255.0f) alpha:1.0f];
-    
+    return [UIColor colorWithRed:((float) r / 255.0f) green:((float) g / 255.0f) blue:((float) b / 255.0f) alpha:alpha];
+
 }
 
 @end

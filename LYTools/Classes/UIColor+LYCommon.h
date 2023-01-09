@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 加载十六进制颜色 -  三种形式都支持 0xFFFFFF #FFFFFF FFFFFF
 + (UIColor *)ly_colorWithHexString:(NSString *)hexStr;
++ (UIColor *)ly_colorWithHexString:(NSString *)hexStr Alpha:(CGFloat)alpha;
 
 
 @end

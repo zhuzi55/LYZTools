@@ -12,7 +12,7 @@
 @implementation NSData (LYCommon)
 
 /// MD5加密
-- (NSString *)smy_md5String{
+- (NSString *)ly_md5String{
     unsigned char result[CC_MD5_DIGEST_LENGTH];
     CC_MD5(self.bytes, (CC_LONG)self.length, result);
     return [NSString stringWithFormat:

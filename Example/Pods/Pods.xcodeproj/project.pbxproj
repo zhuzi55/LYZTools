@@ -28,6 +28,8 @@
 		E520CDF062AE54EFE1D905128EBFFFB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		E66B20232969BDEB00E15788 /* NSData+LYCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = E66B20212969BDEB00E15788 /* NSData+LYCommon.h */; };
 		E66B20242969BDEB00E15788 /* NSData+LYCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = E66B20222969BDEB00E15788 /* NSData+LYCommon.m */; };
+		E66B202B296AAABA00E15788 /* UIDevice+LYCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = E66B2029296AAABA00E15788 /* UIDevice+LYCommon.m */; };
+		E66B202C296AAABA00E15788 /* UIDevice+LYCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = E66B202A296AAABA00E15788 /* UIDevice+LYCommon.h */; };
 		E92EFE98F0D07EC0CCE819B73FD36101 /* Pods-LYTools_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 818440B8DEB964B732893A5264A932A4 /* Pods-LYTools_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FFDC538C07A88E7D7937057F6A528D54 /* UIColor+LYCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBF33E1101442120A753B2CDFED0F5C /* UIColor+LYCommon.m */; };
 /* End PBXBuildFile section */
@@ -94,6 +96,8 @@
 		E14AFF9B8A239EA02CAC059A03C7DE2A /* LYTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LYTools-prefix.pch"; sourceTree = "<group>"; };
 		E66B20212969BDEB00E15788 /* NSData+LYCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSData+LYCommon.h"; path = "LYTools/Classes/NSData+LYCommon.h"; sourceTree = "<group>"; };
 		E66B20222969BDEB00E15788 /* NSData+LYCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSData+LYCommon.m"; path = "LYTools/Classes/NSData+LYCommon.m"; sourceTree = "<group>"; };
+		E66B2029296AAABA00E15788 /* UIDevice+LYCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+LYCommon.m"; path = "LYTools/Classes/UIDevice+LYCommon.m"; sourceTree = "<group>"; };
+		E66B202A296AAABA00E15788 /* UIDevice+LYCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice+LYCommon.h"; path = "LYTools/Classes/UIDevice+LYCommon.h"; sourceTree = "<group>"; };
 		F1CB2550DCFCBD3D10286ACD54EEC0BA /* LYTools-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LYTools-umbrella.h"; sourceTree = "<group>"; };
 		FEA0D9EEA11CDBDDA1C19A2F6B7A2B1C /* UIImage+LYCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+LYCommon.m"; path = "LYTools/Classes/UIImage+LYCommon.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -236,6 +240,8 @@
 				7E4EDF1B0D2263A8A98170DDD8DFDED9 /* UIView+LYCommon.m */,
 				E66B20212969BDEB00E15788 /* NSData+LYCommon.h */,
 				E66B20222969BDEB00E15788 /* NSData+LYCommon.m */,
+				E66B202A296AAABA00E15788 /* UIDevice+LYCommon.h */,
+				E66B2029296AAABA00E15788 /* UIDevice+LYCommon.m */,
 				2DABE6EBA49661B9029B587F749BACF5 /* Pod */,
 				492335D5561417B58DCB110AA5D86F6D /* Support Files */,
 			);
@@ -290,6 +296,7 @@
 				C5D1AD2846A331A4CFDE441AC67BAACC /* UIAlertController+LYCommon.h in Headers */,
 				E66B20232969BDEB00E15788 /* NSData+LYCommon.h in Headers */,
 				8E914EEA0F7819348DC36E244CD017FF /* UIColor+LYCommon.h in Headers */,
+				E66B202C296AAABA00E15788 /* UIDevice+LYCommon.h in Headers */,
 				496A12742C0E186F9F5B162BBB6CA19F /* UIFont+LYCommon.h in Headers */,
 				902C10991777A612087AC8E03BAD0E2D /* UIImage+LYCommon.h in Headers */,
 				8393F5E2371EE0953B8FCBF1C26ABEAF /* UIView+LYCommon.h in Headers */,
@@ -415,6 +422,7 @@
 			files = (
 				E66B20242969BDEB00E15788 /* NSData+LYCommon.m in Sources */,
 				A433F054949B310431CEBC8F1CD25B2E /* LYTools-dummy.m in Sources */,
+				E66B202B296AAABA00E15788 /* UIDevice+LYCommon.m in Sources */,
 				ACC99E0CF605B3A877AE9B44C3AD8447 /* NSString+LYCommon.m in Sources */,
 				40B83365AD8CE65F0EC33E053D64D01F /* UIAlertController+LYCommon.m in Sources */,
 				FFDC538C07A88E7D7937057F6A528D54 /* UIColor+LYCommon.m in Sources */,

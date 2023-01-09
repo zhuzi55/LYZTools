@@ -8,6 +8,7 @@
 #import "NSString+LYCommon.h"
 
 #import "NSData+LYCommon.h"
+#import <CommonCrypto/CommonDigest.h>
 
 
 @implementation NSString (LYCommon)
@@ -434,7 +435,47 @@
 
 /// md5加密
 -(NSString *)ly_md5String{
-    return [[self dataUsingEncoding:NSUTF8StringEncoding] ly_md5String];
+    const char *str = self.UTF8String;
+    int length = (int)strlen(str);
+    unsigned char bytes[CC_MD5_DIGEST_LENGTH];
+    CC_MD5(str, length, bytes);
+    return [self ly_stringFromBytes:bytes length:CC_MD5_DIGEST_LENGTH];
+}
+
+/// sha1加密
+-(NSString *)ly_sha1String{
+    const char *str = self.UTF8String;
+    int length = (int)strlen(str);
+    unsigned char bytes[CC_SHA1_DIGEST_LENGTH];
+    CC_SHA1(str, length, bytes);
+    return [self ly_stringFromBytes:bytes length:CC_SHA1_DIGEST_LENGTH];
+}
+
+/// sha256加密
+-(NSString *)ly_sha256String{
+    const char *str = self.UTF8String;
+    int length = (int)strlen(str);
+    unsigned char bytes[CC_SHA256_DIGEST_LENGTH];
+    CC_SHA256(str, length, bytes);
+    return [self ly_stringFromBytes:bytes length:CC_SHA256_DIGEST_LENGTH];
+}
+
+/// sha512加密
+-(NSString *)ly_sha512String{
+    const char *str = self.UTF8String;
+    int length = (int)strlen(str);
+    unsigned char bytes[CC_SHA512_DIGEST_LENGTH];
+    CC_SHA512(str, length, bytes);
+    return [self ly_stringFromBytes:bytes length:CC_SHA512_DIGEST_LENGTH];
+}
+- (NSString *)ly_stringFromBytes:(unsigned char *)bytes length:(int)length {
+    
+    NSMutableString *strM = [NSMutableString string];
+    for (int i = 0; i < length; i++) {
+        [strM appendFormat:@"%02x", bytes[i]];
+    }
+    return [strM copy];
+    
 }
 
 /// AES加密
