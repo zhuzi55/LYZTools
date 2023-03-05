@@ -62,4 +62,20 @@
     
 }
 
+///  图片转base64
++(NSString *)ly_base64StrWithImage:(UIImage *)img{
+    
+    NSData *imgData = UIImageJPEGRepresentation(img, 1);
+    return [imgData base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+    
+}
+
+/// base64转图片
++(UIImage *)ly_imageWithBase64Str:(NSString *)base64Str{
+    
+    NSData *imgData = [[NSData alloc]initWithBase64EncodedString:base64Str options:NSDataBase64DecodingIgnoreUnknownCharacters];
+    return [UIImage imageWithData:imgData];
+    
+}
+
 @end

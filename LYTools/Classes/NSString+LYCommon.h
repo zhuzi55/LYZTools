@@ -108,6 +108,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// 计算高度
 -(CGFloat)ly_getHeightWithFont:(UIFont *)font constrainedToSize:(CGSize)size;
 
+#pragma mark - 其他方法
+/// json字符串转字典
++(NSDictionary *)ly_dictionaryWithJSONString:(NSString *)jsonString;
+
+/// 字典转json字符串
++(NSString *)ly_JSONStringWithDictionary:(NSDictionary *)dic;
+
+
 
 
 @end

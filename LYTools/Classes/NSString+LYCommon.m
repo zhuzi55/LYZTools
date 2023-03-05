@@ -54,21 +54,21 @@
 /// 生成指定位数的随机字符串 - 数字+字母
 +(NSString *)ly_randomlyGeneratedStringWithLenth:(NSInteger)lenth{
     
-//    NSString *resultStr = [[NSString alloc] init];
-//    for (int i = 0; i < lenth; i++){
-//        int number = arc4random() % 36; // 数字10+字母26
-//        if (number < 10){
-//            int figure = arc4random() % 10; // 0-10取数字
-//            NSString *tempString = [NSString stringWithFormat:@"%d", figure];
-//            resultStr = [resultStr stringByAppendingString:tempString];
-//        } else {
-//            int figure = (arc4random() % 26) + 97; // 10-36取字母
-//            char character = figure;
-//            NSString *tempString = [NSString stringWithFormat:@"%c", character];
-//            resultStr = [resultStr stringByAppendingString:tempString];
-//        }
-//    }
-//    return resultStr;
+    //    NSString *resultStr = [[NSString alloc] init];
+    //    for (int i = 0; i < lenth; i++){
+    //        int number = arc4random() % 36; // 数字10+字母26
+    //        if (number < 10){
+    //            int figure = arc4random() % 10; // 0-10取数字
+    //            NSString *tempString = [NSString stringWithFormat:@"%d", figure];
+    //            resultStr = [resultStr stringByAppendingString:tempString];
+    //        } else {
+    //            int figure = (arc4random() % 26) + 97; // 10-36取字母
+    //            char character = figure;
+    //            NSString *tempString = [NSString stringWithFormat:@"%c", character];
+    //            resultStr = [resultStr stringByAppendingString:tempString];
+    //        }
+    //    }
+    //    return resultStr;
     static NSString *sourceStr = @"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
     NSMutableString *resultStr = [[NSMutableString alloc] init];
     srand((unsigned)time(0));
@@ -136,7 +136,7 @@
                                                 cfEncoding);
         return encoded;
     }
-
+    
 }
 
 /// url解码
@@ -155,7 +155,7 @@
                                                                 en);
         return decoded;
     }
-
+    
 }
 
 /// 是否是邮箱
@@ -230,7 +230,7 @@
     NSPredicate *passWordPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",passWordRegex];
     BOOL result =[passWordPredicate evaluateWithObject:self];
     return result;
-
+    
 }
 
 /// 身份证号
@@ -578,51 +578,51 @@
         return nil;
     }
 #if TARGET_OS_IOS && !defined(APP_SMYWIDGET_EXTENSIONS)
-
+    
     @synchronized ([UIApplication sharedApplication]) {
         
 #endif
-    //a tag to read/write keychain storage
-    NSString *tag = @"RSA_Until_PubKeyKey";
-    NSData *d_tag = [NSData dataWithBytes:[tag UTF8String] length:[tag length]];
-    
-    // Delete any old lingering key with the same tag
-    NSMutableDictionary *publicKey = [[NSMutableDictionary alloc] init];
-    [publicKey setObject:(__bridge id) kSecClassKey forKey:(__bridge id)kSecClass];
-    [publicKey setObject:(__bridge id) kSecAttrKeyTypeRSA forKey:(__bridge id)kSecAttrKeyType];
-    [publicKey setObject:d_tag forKey:(__bridge id)kSecAttrApplicationTag];
-    SecItemDelete((__bridge CFDictionaryRef)publicKey);
-    
-    // Add persistent version of the key to system keychain
-    [publicKey setObject:data forKey:(__bridge id)kSecValueData];
-    [publicKey setObject:(__bridge id) kSecAttrKeyClassPublic forKey:(__bridge id)
-     kSecAttrKeyClass];
-    [publicKey setObject:[NSNumber numberWithBool:YES] forKey:(__bridge id)
-     kSecReturnPersistentRef];
-    
-    CFTypeRef persistKey = nil;
-    OSStatus status = SecItemAdd((__bridge CFDictionaryRef)publicKey, &persistKey);
-    if (persistKey != nil){
-        CFRelease(persistKey);
-    }
-    if ((status != noErr) && (status != errSecDuplicateItem)) {
-        return nil;
-    }
-    
-    [publicKey removeObjectForKey:(__bridge id)kSecValueData];
-    [publicKey removeObjectForKey:(__bridge id)kSecReturnPersistentRef];
-    [publicKey setObject:[NSNumber numberWithBool:YES] forKey:(__bridge id)kSecReturnRef];
-    [publicKey setObject:(__bridge id) kSecAttrKeyTypeRSA forKey:(__bridge id)kSecAttrKeyType];
-    
-    // Now fetch the SecKeyRef version of the key
-    SecKeyRef keyRef = nil;
-    status = SecItemCopyMatching((__bridge CFDictionaryRef)publicKey, (CFTypeRef *)&keyRef);
-    if(status != noErr){
-        return nil;
-    }
-    return keyRef;
+        //a tag to read/write keychain storage
+        NSString *tag = @"RSA_Until_PubKeyKey";
+        NSData *d_tag = [NSData dataWithBytes:[tag UTF8String] length:[tag length]];
+        
+        // Delete any old lingering key with the same tag
+        NSMutableDictionary *publicKey = [[NSMutableDictionary alloc] init];
+        [publicKey setObject:(__bridge id) kSecClassKey forKey:(__bridge id)kSecClass];
+        [publicKey setObject:(__bridge id) kSecAttrKeyTypeRSA forKey:(__bridge id)kSecAttrKeyType];
+        [publicKey setObject:d_tag forKey:(__bridge id)kSecAttrApplicationTag];
+        SecItemDelete((__bridge CFDictionaryRef)publicKey);
+        
+        // Add persistent version of the key to system keychain
+        [publicKey setObject:data forKey:(__bridge id)kSecValueData];
+        [publicKey setObject:(__bridge id) kSecAttrKeyClassPublic forKey:(__bridge id)
+         kSecAttrKeyClass];
+        [publicKey setObject:[NSNumber numberWithBool:YES] forKey:(__bridge id)
+         kSecReturnPersistentRef];
+        
+        CFTypeRef persistKey = nil;
+        OSStatus status = SecItemAdd((__bridge CFDictionaryRef)publicKey, &persistKey);
+        if (persistKey != nil){
+            CFRelease(persistKey);
+        }
+        if ((status != noErr) && (status != errSecDuplicateItem)) {
+            return nil;
+        }
+        
+        [publicKey removeObjectForKey:(__bridge id)kSecValueData];
+        [publicKey removeObjectForKey:(__bridge id)kSecReturnPersistentRef];
+        [publicKey setObject:[NSNumber numberWithBool:YES] forKey:(__bridge id)kSecReturnRef];
+        [publicKey setObject:(__bridge id) kSecAttrKeyTypeRSA forKey:(__bridge id)kSecAttrKeyType];
+        
+        // Now fetch the SecKeyRef version of the key
+        SecKeyRef keyRef = nil;
+        status = SecItemCopyMatching((__bridge CFDictionaryRef)publicKey, (CFTypeRef *)&keyRef);
+        if(status != noErr){
+            return nil;
+        }
+        return keyRef;
 #if TARGET_OS_IOS && !defined(APP_SMYWIDGET_EXTENSIONS)
-
+        
     }
 #endif
 }
@@ -700,50 +700,50 @@
         return nil;
     }
 #if TARGET_OS_IOS && !defined(APP_SMYWIDGET_EXTENSIONS)
-
+    
     @synchronized ([UIApplication sharedApplication]) {
 #endif
-    //a tag to read/write keychain storage
-    NSString *tag = @"RSA_Until_PrivateKey";
-    NSData *d_tag = [NSData dataWithBytes:[tag UTF8String] length:[tag length]];
-    
-    // Delete any old lingering key with the same tag
-    NSMutableDictionary *privateKey = [[NSMutableDictionary alloc] init];
-    [privateKey setObject:(__bridge id) kSecClassKey forKey:(__bridge id)kSecClass];
-    [privateKey setObject:(__bridge id) kSecAttrKeyTypeRSA forKey:(__bridge id)kSecAttrKeyType];
-    [privateKey setObject:d_tag forKey:(__bridge id)kSecAttrApplicationTag];
-    SecItemDelete((__bridge CFDictionaryRef)privateKey);
-    
-    // Add persistent version of the key to system keychain
-    [privateKey setObject:data forKey:(__bridge id)kSecValueData];
-    [privateKey setObject:(__bridge id) kSecAttrKeyClassPrivate forKey:(__bridge id)
-     kSecAttrKeyClass];
-    [privateKey setObject:[NSNumber numberWithBool:YES] forKey:(__bridge id)
-     kSecReturnPersistentRef];
-    
-    CFTypeRef persistKey = nil;
-    OSStatus status = SecItemAdd((__bridge CFDictionaryRef)privateKey, &persistKey);
-    if (persistKey != nil){
-        CFRelease(persistKey);
-    }
-    if ((status != noErr) && (status != errSecDuplicateItem)) {
-        return nil;
-    }
-    
-    [privateKey removeObjectForKey:(__bridge id)kSecValueData];
-    [privateKey removeObjectForKey:(__bridge id)kSecReturnPersistentRef];
-    [privateKey setObject:[NSNumber numberWithBool:YES] forKey:(__bridge id)kSecReturnRef];
-    [privateKey setObject:(__bridge id) kSecAttrKeyTypeRSA forKey:(__bridge id)kSecAttrKeyType];
-    
-    // Now fetch the SecKeyRef version of the key
-    SecKeyRef keyRef = nil;
-    status = SecItemCopyMatching((__bridge CFDictionaryRef)privateKey, (CFTypeRef *)&keyRef);
-    if(status != noErr){
-        return nil;
-    }
-    return keyRef;
+        //a tag to read/write keychain storage
+        NSString *tag = @"RSA_Until_PrivateKey";
+        NSData *d_tag = [NSData dataWithBytes:[tag UTF8String] length:[tag length]];
+        
+        // Delete any old lingering key with the same tag
+        NSMutableDictionary *privateKey = [[NSMutableDictionary alloc] init];
+        [privateKey setObject:(__bridge id) kSecClassKey forKey:(__bridge id)kSecClass];
+        [privateKey setObject:(__bridge id) kSecAttrKeyTypeRSA forKey:(__bridge id)kSecAttrKeyType];
+        [privateKey setObject:d_tag forKey:(__bridge id)kSecAttrApplicationTag];
+        SecItemDelete((__bridge CFDictionaryRef)privateKey);
+        
+        // Add persistent version of the key to system keychain
+        [privateKey setObject:data forKey:(__bridge id)kSecValueData];
+        [privateKey setObject:(__bridge id) kSecAttrKeyClassPrivate forKey:(__bridge id)
+         kSecAttrKeyClass];
+        [privateKey setObject:[NSNumber numberWithBool:YES] forKey:(__bridge id)
+         kSecReturnPersistentRef];
+        
+        CFTypeRef persistKey = nil;
+        OSStatus status = SecItemAdd((__bridge CFDictionaryRef)privateKey, &persistKey);
+        if (persistKey != nil){
+            CFRelease(persistKey);
+        }
+        if ((status != noErr) && (status != errSecDuplicateItem)) {
+            return nil;
+        }
+        
+        [privateKey removeObjectForKey:(__bridge id)kSecValueData];
+        [privateKey removeObjectForKey:(__bridge id)kSecReturnPersistentRef];
+        [privateKey setObject:[NSNumber numberWithBool:YES] forKey:(__bridge id)kSecReturnRef];
+        [privateKey setObject:(__bridge id) kSecAttrKeyTypeRSA forKey:(__bridge id)kSecAttrKeyType];
+        
+        // Now fetch the SecKeyRef version of the key
+        SecKeyRef keyRef = nil;
+        status = SecItemCopyMatching((__bridge CFDictionaryRef)privateKey, (CFTypeRef *)&keyRef);
+        if(status != noErr){
+            return nil;
+        }
+        return keyRef;
 #if TARGET_OS_IOS && !defined(APP_SMYWIDGET_EXTENSIONS)
-
+        
     }
 #endif
 }
@@ -862,5 +862,24 @@
     return resultSize;
 }
 
+/// json字符串转字典
++(NSDictionary *)ly_dictionaryWithJSONString:(NSString *)jsonString{
+    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *err;
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData
+                                                        options:NSJSONReadingMutableContainers
+                                                          error:&err];
+    if(err){
+        return @{};
+    }
+    return dic;
+}
+
+/// 字典转json字符串
++(NSString *)ly_JSONStringWithDictionary:(NSDictionary *)dic{
+    NSData *data = [NSJSONSerialization dataWithJSONObject:dic options:0 error:NULL];
+    NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    return str;
+}
 
 @end

@@ -20,6 +20,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// 压缩图片大小
 -(NSData *)ly_createImageDataWithMaxImageSize:(CGFloat)maxImageSize maxSizeKB:(CGFloat)maxSizeKB;
 
+///  图片转base64
++(NSString *)ly_base64StrWithImage:(UIImage *)img;
+
+/// base64转图片
++(UIImage *)ly_imageWithBase64Str:(NSString *)base64Str;
+
 
 
 @end

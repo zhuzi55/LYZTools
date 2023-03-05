@@ -7,7 +7,7 @@
 //
 
 #import "LYViewController.h"
-//#import "UIView+LYCommon.h"
+#import "NSString+LYCommon.h"
 
 
 @interface LYViewController ()
@@ -27,6 +27,14 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
         
+    
+//    NSString *str = [NSString convertToJSONStringWithDictionary:@{@"name":@"liyz", @"age":@"19"}];
+//
+//    NSLog(@"结果1 == %@", str);
+//
+//    NSLog(@"结果2 == %@", [NSString convertToDictionaryWithJSONString:str]);
+
+    
         
 }
 
