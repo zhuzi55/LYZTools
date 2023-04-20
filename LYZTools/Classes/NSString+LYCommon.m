@@ -882,4 +882,52 @@
     return str;
 }
 
+//** 指定文字指定颜色 (如：还没有账号？注册)
++(NSMutableAttributedString *)setAttriText:(NSString *)attriText Color:(UIColor *)color FirstText:(NSString *)firstText FirstColor:(UIColor *)firstCorlor{
+    
+    NSMutableAttributedString *attributedStr = [[NSMutableAttributedString alloc] initWithString:attriText];
+    NSRange range1 = [[attributedStr string] rangeOfString:attriText];
+    [attributedStr addAttribute:NSForegroundColorAttributeName value:color range:range1];
+    NSRange range2 = [[attributedStr string] rangeOfString:firstText];
+    [attributedStr addAttribute:NSForegroundColorAttributeName value:firstCorlor range:range2];
+    return attributedStr;
+    
+}
+
+//** 指定文字指定颜色和大小 ( 如：0.00(lovc) )
++(NSMutableAttributedString *)setAttriText:(NSString *)attriText Color:(UIColor *)color Font:(CGFloat)font FirstText:(NSString *)firstText FirstColor:(UIColor *)firstCorlor FirstFont:(CGFloat)firstFont{
+    
+    NSMutableAttributedString *attributedStr = [[NSMutableAttributedString alloc] initWithString:attriText];
+    NSRange range1 = [[attributedStr string] rangeOfString:attriText];
+    [attributedStr addAttributes:@{NSForegroundColorAttributeName:color, NSFontAttributeName:[UIFont systemFontOfSize:font]} range:range1];
+    NSRange range2 = [[attributedStr string] rangeOfString:firstText];
+    [attributedStr addAttributes:@{NSForegroundColorAttributeName:firstCorlor, NSFontAttributeName:[UIFont systemFontOfSize:firstFont]} range:range2];
+    return attributedStr;
+}
+
++(NSMutableAttributedString *)setAttBoldText:(NSString *)attriText Color:(UIColor *)color Font:(UIFont *)font FirstText:(NSString *)firstText FirstColor:(UIColor *)firstCorlor FirstFont:(UIFont *)firstFont{
+    
+    NSMutableAttributedString *attributedStr = [[NSMutableAttributedString alloc] initWithString:attriText];
+    NSRange range1 = [[attributedStr string] rangeOfString:attriText];
+    [attributedStr addAttributes:@{NSForegroundColorAttributeName:color, NSFontAttributeName:font} range:range1];
+    NSRange range2 = [[attributedStr string] rangeOfString:firstText];
+    [attributedStr addAttributes:@{NSForegroundColorAttributeName:firstCorlor, NSFontAttributeName:firstFont} range:range2];
+    return attributedStr;
+}
+
+
+//** 指定两处文字指定颜色和大小 ( 如：1.00 eth ≈ 6.66 lovc )
++(NSMutableAttributedString *)setAttriText:(NSString *)attriText Color:(UIColor *)color Font:(CGFloat)font FirstText:(NSString *)firstText FirstColor:(UIColor *)firstCorlor FirstFont:(CGFloat)firstFont SecondtText:(NSString *)secondText SecondColor:(UIColor *)secondCorlor SecondFont:(CGFloat)secondFont{
+    
+    NSMutableAttributedString *attributedStr = [[NSMutableAttributedString alloc] initWithString:attriText];
+    NSRange range1 = [[attributedStr string] rangeOfString:attriText];
+    [attributedStr addAttributes:@{NSForegroundColorAttributeName:color, NSFontAttributeName:[UIFont systemFontOfSize:font]} range:range1];
+    NSRange range2 = [[attributedStr string] rangeOfString:firstText];
+    [attributedStr addAttributes:@{NSForegroundColorAttributeName:firstCorlor, NSFontAttributeName:[UIFont systemFontOfSize:firstFont]} range:range2];
+    NSRange range3 = [[attributedStr string] rangeOfString:secondText];
+    [attributedStr addAttributes:@{NSForegroundColorAttributeName:secondCorlor, NSFontAttributeName:[UIFont systemFontOfSize:secondFont]} range:range3];
+    return attributedStr;
+}
+
+
 @end

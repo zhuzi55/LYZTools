@@ -115,6 +115,18 @@ NS_ASSUME_NONNULL_BEGIN
 /// 字典转json字符串
 +(NSString *)ly_JSONStringWithDictionary:(NSDictionary *)dic;
 
+#pragma mark - 富文本字符串
+/// 指定文字指定颜色 (如：还没有账号？注册)
++(NSMutableAttributedString *)setAttriText:(NSString *)attriText Color:(UIColor *)color FirstText:(NSString *)firstText FirstColor:(UIColor *)firstCorlor;
+
+/// 指定一处文字指定颜色和大小 ( 如：0.00(lovc) )
++(NSMutableAttributedString *)setAttriText:(NSString *)attriText Color:(UIColor *)color Font:(CGFloat)font FirstText:(NSString *)firstText FirstColor:(UIColor *)firstCorlor FirstFont:(CGFloat)firstFont;
+
+/// 传font进来，可加粗
++(NSMutableAttributedString *)setAttBoldText:(NSString *)attriText Color:(UIColor *)color Font:(UIFont *)font FirstText:(NSString *)firstText FirstColor:(UIColor *)firstCorlor FirstFont:(UIFont *)firstFont;
+
+/// 指定两处文字指定颜色和大小 ( 如：1.00 eth ≈ 6.66 lovc )
++(NSMutableAttributedString *)setAttriText:(NSString *)attriText Color:(UIColor *)color Font:(CGFloat)font FirstText:(NSString *)firstText FirstColor:(UIColor *)firstCorlor FirstFont:(CGFloat)firstFont SecondtText:(NSString *)secondText SecondColor:(UIColor *)secondCorlor SecondFont:(CGFloat)secondFont;
 
 
 
