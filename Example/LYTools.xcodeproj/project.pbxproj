@@ -302,11 +302,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LYTools_Example/Pods-LYTools_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/LYTools/LYTools.framework",
+				"${BUILT_PRODUCTS_DIR}/LYZTools/LYZTools.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LYTools.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LYZTools.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

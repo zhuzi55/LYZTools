@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## LYTools
+## LYZTools
 
 Copyright (c) 2023 zhuzi55 <liyuzhu@wondersgroup.com>
 
