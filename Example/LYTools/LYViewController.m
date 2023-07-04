@@ -7,8 +7,7 @@
 //
 
 #import "LYViewController.h"
-#import "NSString+LYCommon.h"
-
+#import "LYZTool.h"
 
 @interface LYViewController ()
 
@@ -27,15 +26,18 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
         
-    
-//    NSString *str = [NSString convertToJSONStringWithDictionary:@{@"name":@"liyz", @"age":@"19"}];
+//    [[LYZTool sharedInstance] getLocationWithCallback:^(NSDictionary * _Nonnull dict) {
 //
-//    NSLog(@"结果1 == %@", str);
+//        NSLog(@"定位信息 == %@", dict);
 //
-//    NSLog(@"结果2 == %@", [NSString convertToDictionaryWithJSONString:str]);
+//    }];
 
-    
-        
+//    [[LYZTool sharedInstance] getAddressWithCallback:^(NSDictionary * _Nonnull dict) {
+//
+//        NSLog(@"位置信息 == %@", dict);
+//
+//    }];
+
 }
 
 
